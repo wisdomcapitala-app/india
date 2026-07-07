@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisdom Capital – Trade Glitch Free with Wisdom AI</title>
+
+    <!-- Google Font: Poppins (all weights) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <style>
+        /* ============================================================
+               RESET & BASE
+            ============================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Primary */
+            --deep-navy: #2A394E;
+            --vibrant-cyan: #0BC9FF;
+            --sky-blue: #38BDF8;
+            --branded-blue: #1D4ED8;
+            --deep-link-blue: #0567A8;
+
+            /* Neutrals */
+            --off-white: #FFFFFF;
+            --light-gray: #E5E7EB;
+            --dark-text: #000000;
+            --medium-gray: #374151;
+            --muted-gray: #636363;
+
+            /* Surfaces */
+            --subtle-cyan: #E8F6FB;
+            --soft-lavender: #F2F3F8;
+            --pale-mauve: #F5F3F6;
+            --warm-cream: #FBF6EF;
+
+            /* Semantic */
+            --error-red: #EF4444;
+            --darker-error: #DC2626;
+            --success-green: #22C55E;
+
+            /* Typography */
+            --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+            /* Spacing */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-base: 12px;
+            --space-md: 16px;
+            --space-lg: 20px;
+            --space-xl: 28px;
+            --space-2xl: 40px;
+            --space-3xl: 56px;
+            --space-4xl: 76px;
+            --space-5xl: 80px;
+            --space-6xl: 128px;
+            --space-7xl: 176px;
+
+            /* Border Radius */
+            --radius-tight: 6px;
+            --radius-pill: 9999px;
+            --radius-generous: 16px;
+            --radius-max: 24px;
+
+            /* Shadows */
+            --shadow-flat: none;
+            --shadow-subtle: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+            --shadow-soft: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+                rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+            --shadow-nav: rgb(186, 230, 253) 0px 25px 50px -12px;
+            --shadow-promo: rgba(5, 103, 168, 0.2) 0px 20px 40px;
+            --shadow-modal: rgba(0, 0, 0, 0.2) 0px 20px 60px;
+
+            /* Container */
+            --container-max: 1168px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background: var(--off-white);
+            color: var(--dark-text);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ============================================================
+               CONTAINER
+            ============================================================ */
+        .container {
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 var(--space-md);
+            }
+        }
+
+        /* ============================================================
+               TYPOGRAPHY
+            ============================================================ */
+        .heading-display {
+            font-family: var(--font-primary);
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0px;
+        }
+
+        .heading-h2 {
+            font-family: var(--font-primary);
+            font-size: 29px;
+            font-weight: 600;
+            line-height: 35px;
+            letter-spacing: 0px;
+        }
+
+        .heading-h3 {
+            font-family: var(--font-primary);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            letter-spacing: 0px;
+        }
+
+        .heading-h4 {
+            font-family: var(--font-primary);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0px;
+        }
+
+        .heading-h5 {
+            font-family: var(--font-primary);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0px;
+        }
+
+        .body-regular {
+            font-family: var(--font-primary);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0px;
+        }
+
+        .body-large {
+            font-family: var(--font-primary);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+        }
+
+        .caption {
+            font-family: var(--font-primary);
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 16.5px;
+            letter-spacing: 0px;
+        }
+
+        .label-text {
+            font-family: var(--font-primary);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0px;
+        }
+
+        .button-text {
+            font-family: var(--font-primary);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0px;
+        }
+
+        .text-navy {
+            color: var(--deep-navy);
+        }
+        .text-cyan {
+            color: var(--vibrant-cyan);
+        }
+        .text-white {
+            color: var(--off-white);
+        }
+        .text-gray {
+            color: var(--medium-gray);
+        }
+        .text-muted {
+            color: var(--muted-gray);
+        }
+        .text-dark {
+            color: var(--dark-text);
+        }
+
+        /* ============================================================
+               BUTTONS
+            ============================================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-primary);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            border-radius: var(--radius-pill);
+            padding: 12px 16px;
+            min-height: 44px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            gap: var(--space-sm);
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--vibrant-cyan);
+            color: var(--off-white);
+            border-color: transparent;
+        }
+        .btn-primary:hover {
+            background: #00B8E6;
+            transform: scale(1.02);
+        }
+        .btn-primary:active {
+            background: #0099CC;
+        }
+        .btn-primary:disabled {
+            background: #B3E5FC;
+            color: #80DEEA;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--deep-navy);
+            border-color: var(--vibrant-cyan);
+            min-height: 46px;
+        }
+        .btn-secondary:hover {
+            background: var(--subtle-cyan);
+        }
+        .btn-secondary:active {
+            background: #D0F0FB;
+            color: var(--deep-link-blue);
+        }
+        .btn-secondary:focus {
+            outline: 2px solid var(--vibrant-cyan);
+            outline-offset: 2px;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--medium-gray);
+            font-weight: 400;
+            font-size: 16px;
+            padding: 8px 8px;
+            border-radius: var(--radius-tight);
+            border: none;
+            min-height: auto;
+        }
+        .btn-ghost:hover {
+            background: var(--soft-lavender);
+            color: var(--deep-navy);
+        }
+
+        .btn-outline-cyan {
+            background: transparent;
+            color: var(--vibrant-cyan);
+            border-color: var(--vibrant-cyan);
+            padding: 8px 12px;
+            min-height: auto;
+        }
+        .btn-outline-cyan:hover {
+            background: var(--subtle-cyan);
+        }
+        .btn-outline-cyan:active {
+            background: #D0F0FB;
+            color: var(--deep-link-blue);
+        }
+
+        .btn-error {
+            background: transparent;
+            color: var(--error-red);
+            border-color: var(--error-red);
+            padding: 4px 4px;
+            min-height: 26px;
+            min-width: 26px;
+            border-radius: var(--radius-tight);
+            font-size: 16px;
+        }
+        .btn-error:hover {
+            background: #FEE2E2;
+            color: var(--darker-error);
+        }
+        .btn-error:active {
+            background: #FCA5A5;
+        }
+
+        /* ============================================================
+               CARDS
+            ============================================================ */
+        .card {
+            background: var(--off-white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-generous);
+            padding: 20px 24px;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.25s ease;
+        }
+        .card:hover {
+            border-color: var(--vibrant-cyan);
+            box-shadow: rgba(11, 201, 255, 0.1) 0px 4px 12px;
+        }
+
+        .card-feature {
+            background: var(--soft-lavender);
+            border-radius: var(--radius-generous);
+            padding: 28px 24px;
+            text-align: center;
+            border: none;
+        }
+        .card-feature .icon-wrap {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto var(--space-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-feature .icon-wrap img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+
+        .card-elevated {
+            background: linear-gradient(135deg, var(--deep-link-blue) 0%, var(--vibrant-cyan) 100%);
+            border-radius: var(--radius-max);
+            padding: 40px 56px;
+            color: var(--off-white);
+            box-shadow: var(--shadow-promo);
+            min-height: 200px;
+        }
+        @media (max-width: 640px) {
+            .card-elevated {
+                padding: 28px 24px;
+            }
+        }
+
+        /* ============================================================
+               BADGES
+            ============================================================ */
+        .badge {
+            display: inline-block;
+            font-family: var(--font-primary);
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 16px;
+            padding: 4px 12px;
+            border-radius: var(--radius-pill);
+        }
+        .badge-primary {
+            background: var(--vibrant-cyan);
+            color: var(--off-white);
+        }
+        .badge-error {
+            background: #FEE2E2;
+            color: var(--error-red);
+            border-radius: var(--radius-tight);
+        }
+        .badge-success {
+            background: #DCFCE7;
+            color: var(--success-green);
+            border-radius: var(--radius-tight);
+        }
+
+        /* ============================================================
+               NAVIGATION
+            ============================================================ */
+        .navbar {
+            background: var(--off-white);
+            padding: 8px 40px;
+            border-radius: var(--radius-pill);
+            box-shadow: var(--shadow-nav);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 65px;
+            margin: var(--space-md) auto 0;
+            max-width: var(--container-max);
+            position: relative;
+            z-index: 50;
+        }
+        @media (max-width: 1024px) {
+            .navbar {
+                padding: 8px var(--space-md);
+                border-radius: var(--radius-generous);
+                margin: var(--space-sm) var(--space-sm) 0;
+            }
+        }
+        @media (max-width: 640px) {
+            .navbar {
+                padding: 8px var(--space-md);
+                border-radius: var(--radius-generous);
+                margin: var(--space-sm) var(--space-sm) 0;
+                height: 58px;
+            }
+        }
+
+        .nav-logo img {
+            height: 32px;
+            width: auto;
+        }
+        @media (max-width: 640px) {
+            .nav-logo img {
+                height: 26px;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+        }
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+            }
+            .nav-links.is-open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: var(--space-md);
+                right: var(--space-md);
+                background: var(--off-white);
+                border-radius: var(--radius-generous);
+                padding: var(--space-lg);
+                box-shadow: var(--shadow-soft);
+                gap: var(--space-md);
+                border: 1px solid var(--light-gray);
+            }
+            .nav-links.is-open .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        @media (max-width: 640px) {
+            .nav-links.is-open {
+                top: 62px;
+                left: var(--space-sm);
+                right: var(--space-sm);
+            }
+        }
+
+        .nav-link {
+            font-family: var(--font-primary);
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--dark-text);
+            padding: 8px 0;
+            line-height: 24px;
+            transition: color 0.2s;
+            position: relative;
+        }
+        .nav-link:hover {
+            color: var(--vibrant-cyan);
+        }
+        .nav-link.active {
+            color: var(--vibrant-cyan);
+            border-bottom: 2px solid var(--vibrant-cyan);
+        }
+
+        .nav-link-outlined {
+            font-family: var(--font-primary);
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--vibrant-cyan);
+            padding: 8px 16px;
+            border: 1px solid var(--vibrant-cyan);
+            border-radius: var(--radius-pill);
+            background: rgba(11, 201, 255, 0.05);
+            line-height: 16.5px;
+            transition: all 0.2s;
+        }
+        .nav-link-outlined:hover {
+            background: rgba(11, 201, 255, 0.1);
+            color: var(--vibrant-cyan);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: var(--space-sm);
+        }
+        .hamburger svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--dark-text);
+        }
+        @media (max-width: 1024px) {
+            .hamburger {
+                display: block;
+            }
+        }
+
+        /* ============================================================
+               SECTIONS
+            ============================================================ */
+        section {
+            padding: var(--space-4xl) 0;
+        }
+        @media (max-width: 640px) {
+            section {
+                padding: var(--space-2xl) 0;
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+        .section-title h2 {
+            font-size: 29px;
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        .section-title p {
+            font-size: 16px;
+            color: var(--medium-gray);
+            margin-top: var(--space-sm);
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================================================
+               HERO
+            ============================================================ */
+        .hero {
+            padding: var(--space-5xl) 0 var(--space-4xl);
+            background: var(--off-white);
+        }
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+        @media (max-width: 1024px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+        .hero-content h1 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            color: var(--deep-navy);
+        }
+        .hero-content h1 .highlight {
+            color: var(--vibrant-cyan);
+        }
+        .hero-content p {
+            font-size: 16px;
+            color: var(--medium-gray);
+            margin: var(--space-md) 0 var(--space-lg);
+            max-width: 480px;
+        }
+        @media (max-width: 1024px) {
+            .hero-content p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .hero-actions {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+        @media (max-width: 1024px) {
+            .hero-actions {
+                justify-content: center;
+            }
+        }
+        .hero-image img {
+            width: 100%;
+            border-radius: var(--radius-generous);
+        }
+
+        /* ============================================================
+               FEATURES GRID
+            ============================================================ */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+        }
+        @media (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============================================================
+               PRODUCT GRID
+            ============================================================ */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-md);
+        }
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .product-card {
+            background: var(--off-white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-generous);
+            padding: var(--space-lg);
+            text-align: center;
+            transition: all 0.25s ease;
+        }
+        .product-card:hover {
+            border-color: var(--vibrant-cyan);
+            box-shadow: rgba(11, 201, 255, 0.1) 0px 4px 12px;
+        }
+        .product-card img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            margin: 0 auto var(--space-md);
+        }
+        .product-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        .product-card p {
+            font-size: 12px;
+            color: var(--muted-gray);
+            margin-top: var(--space-xs);
+        }
+
+        /* ============================================================
+               SUPER TRADERS
+            ============================================================ */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+        }
+        @media (max-width: 1024px) {
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .tool-item {
+            background: var(--off-white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-generous);
+            padding: var(--space-md) var(--space-lg);
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            transition: all 0.2s;
+        }
+        .tool-item:hover {
+            border-color: var(--vibrant-cyan);
+        }
+        .tool-item img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+        .tool-item span {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--deep-navy);
+        }
+
+        /* ============================================================
+               AWARDS
+            ============================================================ */
+        .awards-scroll {
+            display: flex;
+            gap: var(--space-lg);
+            overflow-x: auto;
+            padding: var(--space-sm) 0 var(--space-md);
+            scroll-snap-type: x mandatory;
+        }
+        .awards-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+        .awards-scroll::-webkit-scrollbar-track {
+            background: var(--light-gray);
+            border-radius: var(--radius-pill);
+        }
+        .awards-scroll::-webkit-scrollbar-thumb {
+            background: var(--vibrant-cyan);
+            border-radius: var(--radius-pill);
+        }
+
+        .award-item {
+            flex: 0 0 180px;
+            background: var(--off-white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-generous);
+            padding: var(--space-md);
+            text-align: center;
+            scroll-snap-align: start;
+            transition: all 0.2s;
+        }
+        .award-item:hover {
+            border-color: var(--vibrant-cyan);
+        }
+        .award-item img {
+            height: 56px;
+            width: auto;
+            object-fit: contain;
+            margin: 0 auto var(--space-sm);
+        }
+        .award-item p {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--deep-navy);
+            line-height: 1.3;
+        }
+
+        /* ============================================================
+               MEDIA MENTIONS
+            ============================================================ */
+        .media-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-lg);
+            justify-content: center;
+            align-items: center;
+        }
+        .media-grid img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(1) opacity(0.6);
+            transition: all 0.25s;
+        }
+        .media-grid img:hover {
+            filter: grayscale(0) opacity(1);
+        }
+
+        /* ============================================================
+               MARGIN CALCULATOR
+            ============================================================ */
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-md);
+        }
+        @media (max-width: 1024px) {
+            .calc-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .calc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .calc-item {
+            background: var(--off-white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-generous);
+            padding: var(--space-md);
+            text-align: center;
+            transition: all 0.2s;
+        }
+        .calc-item:hover {
+            border-color: var(--vibrant-cyan);
+        }
+        .calc-item img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            margin: 0 auto var(--space-sm);
+        }
+        .calc-item span {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--deep-navy);
+        }
+
+        /* ============================================================
+               TESTIMONIALS
+            ============================================================ */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+        }
+        @media (max-width: 1024px) {
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .testimonial-card {
+            background: var(--off-white);
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius-generous);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-subtle);
+        }
+        .testimonial-card .quote {
+            font-size: 14px;
+            color: var(--medium-gray);
+            line-height: 1.6;
+            margin-bottom: var(--space-md);
+            font-style: italic;
+        }
+        .testimonial-card .author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+        .testimonial-card .author img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .testimonial-card .author .name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--deep-navy);
+        }
+        .testimonial-card .author .role {
+            font-size: 12px;
+            color: var(--muted-gray);
+        }
+
+        /* ============================================================
+               FOOTER
+            ============================================================ */
+        .footer {
+            background: var(--deep-navy);
+            color: var(--off-white);
+            padding: var(--space-2xl) 0 var(--space-lg);
+        }
+        .footer a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: color 0.2s;
+        }
+        .footer a:hover {
+            color: var(--vibrant-cyan);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: var(--space-2xl);
+        }
+        @media (max-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 640px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+        }
+        .footer-brand img {
+            height: 32px;
+            width: auto;
+            margin-bottom: var(--space-md);
+        }
+        .footer-brand p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+            max-width: 320px;
+            line-height: 1.6;
+        }
+        .footer-col h5 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            color: var(--off-white);
+        }
+        .footer-col ul li {
+            margin-bottom: var(--space-sm);
+        }
+        .footer-col ul li a {
+            font-size: 13px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .footer-socials {
+            display: flex;
+            gap: var(--space-md);
+        }
+        .footer-socials a img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+            opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+        .footer-socials a:hover img {
+            opacity: 1;
+        }
+
+        /* ============================================================
+               RESPONSIVE HELPERS
+            ============================================================ */
+        .text-center {
+            text-align: center;
+        }
+        .mt-sm {
+            margin-top: var(--space-sm);
+        }
+        .mt-md {
+            margin-top: var(--space-md);
+        }
+        .mt-lg {
+            margin-top: var(--space-lg);
+        }
+        .mt-xl {
+            margin-top: var(--space-xl);
+        }
+        .mb-sm {
+            margin-bottom: var(--space-sm);
+        }
+        .mb-md {
+            margin-bottom: var(--space-md);
+        }
+        .mb-lg {
+            margin-bottom: var(--space-lg);
+        }
+        .gap-sm {
+            gap: var(--space-sm);
+        }
+        .gap-md {
+            gap: var(--space-md);
+        }
+        .gap-lg {
+            gap: var(--space-lg);
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        @media (max-width: 640px) {
+            .hide-mobile {
+                display: none !important;
+            }
+            .btn {
+                font-size: 13px;
+                padding: 10px 14px;
+                min-height: 40px;
+            }
+            .heading-display {
+                font-size: 28px;
+                line-height: 34px;
+            }
+            .heading-h2 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+            .heading-h3 {
+                font-size: 20px;
+                line-height: 26px;
+            }
+            .body-large {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    NAVIGATION
+    ============================================================ -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-logo">
+                <img
+                src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnew_logo4.f8e1cee0.png&w=256&q=75"
+                alt="Wisdom Capital logo"
+                width="140"
+                height="32"
+                />
+            </div>
+
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="#" class="nav-link active" role="menuitem">Home</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">Products</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">Pricing</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">Contact</a></li>
+                <li role="none">
+                    <a href="#" class="nav-link-outlined" role="menuitem">Open Account</a>
+                </li>
+                <li role="none">
+                    <a href="https://app-wisdomcapital-indialogin.edgeone.dev/" target="_blank" class="btn btn-primary" style="padding:8px 20px;min-height:38px;font-size:13px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
+                        Login
+                    </a>
+                </li>
+            </ul>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>
+                    Trade <span class="highlight">Glitch Free</span><br />
+                    with Wisdom AI
+                </h1>
+                <p class="body-large">
+                    India's most trusted discount brokerage — trade equities, F&O, commodities,
+                    currencies &amp; IPOs with real‑time data and lightning‑fast execution.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://app-wisdomcapital-indialogin.edgeone.dev/" target="_blank" class="btn btn-primary" style="text-decoration:none;">Get Started Now</a>
+                    <a href="https://app-wisdomcapital-indialogin.edgeone.dev/" target="_blank" class="btn btn-secondary" style="text-decoration:none;">View Plans</a>
+                </div>
+                <!-- removed Google Play & App Store badges -->
+            </div>
+            <div class="hero-image">
+                <img
+                src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner_home.490bf0b1.png&w=3840&q=75"
+                alt="Wisdom Capital trading platform"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FEATURES
+    ============================================================ -->
+    <section style="padding-top:0;">
+        <div class="container">
+            <div class="features-grid">
+                <div class="card-feature">
+                    <div class="icon-wrap">
+                        <img
+                        src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Funlockicons.67319dcd.png&w=96&q=75"
+                        alt="Maximize Returns"
+                        />
+                    </div>
+                    <h4 class="heading-h4" style="font-size:18px;color:var(--deep-navy);">Maximize Returns</h4>
+                    <p class="body-regular" style="color:var(--muted-gray);margin-top:var(--space-xs);">
+                        AI‑driven insights to help you make smarter investment decisions.
+                    </p>
+                </div>
+                <div class="card-feature">
+                    <div class="icon-wrap">
+                        <img
+                        src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Funlockicons1.1c90091c.png&w=96&q=75"
+                        alt="Cutting-Edge Trading"
+                        />
+                    </div>
+                    <h4 class="heading-h4" style="font-size:18px;color:var(--deep-navy);">Cutting-Edge Trading</h4>
+                    <p class="body-regular" style="color:var(--muted-gray);margin-top:var(--space-xs);">
+                        Lightning‑fast execution with advanced charting and analytics.
+                    </p>
+                </div>
+                <div class="card-feature">
+                    <div class="icon-wrap">
+                        <img
+                        src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Funlockicons2.9df23503.png&w=96&q=75"
+                        alt="Transparent Pricing"
+                        />
+                    </div>
+                    <h4 class="heading-h4" style="font-size:18px;color:var(--deep-navy);">Transparent Pricing</h4>
+                    <p class="body-regular" style="color:var(--muted-gray);margin-top:var(--space-xs);">
+                        Flat‑fee or per‑order — no hidden charges, ever.
+                    </p>
+                </div>
+                <div class="card-feature">
+                    <div class="icon-wrap">
+                        <img
+                        src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Funlockicons3.84bf72df.png&w=96&q=75"
+                        alt="Tailored Support"
+                        />
+                    </div>
+                    <h4 class="heading-h4" style="font-size:18px;color:var(--deep-navy);">Tailored Support</h4>
+                    <p class="body-regular" style="color:var(--muted-gray);margin-top:var(--space-xs);">
+                        Dedicated relationship managers and 24/7 client support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SAARTHI – AI ASSISTANT
+    ============================================================ -->
+    <section style="padding-top:0;">
+        <div class="container">
+            <div class="card-elevated" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-2xl);align-items:center;">
+                <div>
+                    <span class="badge badge-primary" style="background:rgba(255,255,255,0.2);color:#fff;border:1px solid rgba(255,255,255,0.3);">
+                        AI Assistant
+                    </span>
+                    <h2 class="heading-h2" style="color:#fff;margin-top:var(--space-md);">Meet Saarthi</h2>
+                    <p style="font-size:16px;color:rgba(255,255,255,0.85);line-height:1.6;margin-top:var(--space-sm);">
+                        Your intelligent trading companion. Saarthi helps you analyze markets,
+                        build strategies, and execute trades with confidence — all powered by
+                        Wisdom AI.
+                    </p>
+                    <a href="https://app-wisdomcapital-indialogin.edgeone.dev/" target="_blank" class="btn" style="background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.3);margin-top:var(--space-md);text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
+                        Learn More →
+                    </a>
+                </div>
+                <div style="display:flex;justify-content:center;">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSaarthi.addb140c.webp&w=3840&q=75"
+                    alt="Saarthi AI Assistant"
+                    style="max-width:320px;width:100%;border-radius:var(--radius-generous);"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    PRODUCTS
+    ============================================================ -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Trading Ecosystem</h2>
+                <p>Powerful platforms built for every kind of trader</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmobile-app.48efdf71.png&w=1920&q=75"
+                    alt="Mobile App"
+                    />
+                    <h4>Mobile App</h4>
+                    <p>Trade on the go with our powerful iOS &amp; Android app</p>
+                </div>
+                <div class="product-card">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fweb-trading.02c932fe.png&w=3840&q=75"
+                    alt="Web Trading"
+                    />
+                    <h4>Web Trading</h4>
+                    <p>Full‑featured web platform with advanced charting tools</p>
+                </div>
+                <div class="product-card">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquantpower.3af4b481.png&w=3840&q=75"
+                    alt="QuantPower"
+                    />
+                    <h4>QuantPower</h4>
+                    <p>AI‑driven analytics, strategy builders &amp; back‑testing</p>
+                </div>
+                <div class="product-card">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fxts.8db1c119.png&w=3840&q=75"
+                    alt="XTS Platform"
+                    />
+                    <h4>XTS Platform</h4>
+                    <p>Institutional‑grade execution with ultra‑low latency</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    SUPER TRADERS TOOLS
+    ============================================================ -->
+    <section style="background:var(--soft-lavender);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Super Traders Toolkit</h2>
+                <p>Professional‑grade tools to elevate your trading strategy</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSuperTraders1.5f13f462.png&w=256&q=75"
+                    alt="Options Trading Tools"
+                    />
+                    <span>Options Trading Tools</span>
+                </div>
+                <div class="tool-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSuperTraders2.182088e3.png&w=256&q=75"
+                    alt="Strategy Builder"
+                    />
+                    <span>Strategy Builder</span>
+                </div>
+                <div class="tool-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSuperTraders3.bd868d89.png&w=256&q=75"
+                    alt="Option Greeks"
+                    />
+                    <span>Option Greeks</span>
+                </div>
+                <div class="tool-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSuperTraders4.2e729dca.png&w=256&q=75"
+                    alt="MTM Stoploss"
+                    />
+                    <span>MTM Stoploss</span>
+                </div>
+                <div class="tool-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSuperTraders5.8929d7ab.png&w=256&q=75"
+                    alt="Future Analysis"
+                    />
+                    <span>Future Analysis</span>
+                </div>
+                <div class="tool-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSuperTraders6.8fc6e2e2.png&w=256&q=75"
+                    alt="Back Testing"
+                    />
+                    <span>Back Testing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    AWARDS
+    ============================================================ -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Awards &amp; Achievements</h2>
+                <p>Recognized as one of India's most trusted trading platforms</p>
+            </div>
+            <div class="awards-scroll">
+                <div class="award-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fawardsicons1.33201f1c.png&w=640&q=75"
+                    alt="India's Greatest Brand 2022"
+                    />
+                    <p>India's Greatest Brand 2022</p>
+                </div>
+                <div class="award-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fawardsicons3.8d1e760c.png&w=640&q=75"
+                    alt="India's Most Admired Brand 2021"
+                    />
+                    <p>India's Most Admired Brand 2021</p>
+                </div>
+                <div class="award-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fawardsicons2.6103a4c7.png&w=640&q=75"
+                    alt="Global Visionary Award 2021"
+                    />
+                    <p>Global Visionary Award 2021</p>
+                </div>
+                <div class="award-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fawardsicons4.de905030.png&w=640&q=75"
+                    alt="Capital Market Solution Award 2020"
+                    />
+                    <p>Capital Market Solution Award 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    MEDIA MENTIONS
+    ============================================================ -->
+    <section style="padding-top:0;">
+        <div class="container">
+            <div class="section-title" style="margin-bottom:var(--space-lg);">
+                <h2 style="font-size:20px;">As seen in</h2>
+            </div>
+            <div class="media-grid">
+                <img
+                src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbq-logo.2b9b96f4.png&w=1080&q=75"
+                alt="Bloomberg"
+                />
+                <img
+                src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBusiness-Line.b9bd45ef.png&w=1080&q=75"
+                alt="Business Line"
+                />
+                <img
+                src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcio.c1720dea.png&w=1080&q=75"
+                alt="CIO Review"
+                />
+                <img
+                src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fet.b2553955.png&w=1080&q=75"
+                alt="Economic Times"
+                />
+                <img
+                src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhuffpost.fd0c620c.png&w=1080&q=75"
+                alt="HuffPost"
+                />
+                <img
+                src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fyourstory.dc72fc33.png&w=1080&q=75"
+                alt="YourStory"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    MARGIN CALCULATOR
+    ============================================================ -->
+    <section style="background:var(--subtle-cyan);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Margin Calculators</h2>
+                <p>Plan your trades with precision — know your margins instantly</p>
+            </div>
+            <div class="calc-grid">
+                <div class="calc-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fequity.e4f8bd98.png&w=128&q=75"
+                    alt="F&O Margin Calculator"
+                    />
+                    <span>F&amp;O Margin</span>
+                </div>
+                <div class="calc-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffluctuation.c51d5777.png&w=128&q=75"
+                    alt="MCX Margin Calculator"
+                    />
+                    <span>MCX Margin</span>
+                </div>
+                <div class="calc-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbuying.4a416089.png&w=128&q=75"
+                    alt="Equity Margin"
+                    />
+                    <span>Equity Margin</span>
+                </div>
+                <div class="calc-item">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcurrencymargin.676fe69d.png&w=128&q=75"
+                    alt="Currency Margin"
+                    />
+                    <span>Currency Margin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    TESTIMONIALS
+    ============================================================ -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Traders Say</h2>
+                <p>Real stories from real investors who trust Wisdom Capital</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote">
+                        “Wisdom Capital's AI tools have completely transformed my trading.
+                        The QuantPower analytics are a game‑changer.”
+                    </div>
+                    <div class="author">
+                        <img
+                        src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgeetanjali.af061da8.jpg&w=96&q=75"
+                        alt="Geetanjali"
+                        />
+                        <div>
+                            <div class="name">Geetanjali Sharma</div>
+                            <div class="role">Independent Trader</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">
+                        “The platform is incredibly fast and reliable. I've never experienced
+                        a glitch during peak trading hours.”
+                    </div>
+                    <div class="author">
+                        <img
+                        src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsunny-sinha.a3df4bca.jpg&w=96&q=75"
+                        alt="Sunny Sinha"
+                        />
+                        <div>
+                            <div class="name">Sunny Sinha</div>
+                            <div class="role">Professional Investor</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">
+                        “Transparent pricing and exceptional support. Wisdom Capital makes
+                        trading accessible for everyone.”
+                    </div>
+                    <div class="author">
+                        <img
+                        src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fshankar.47d92874.jpg&w=96&q=75"
+                        alt="Shankar"
+                        />
+                        <div>
+                            <div class="name">Shankar Iyer</div>
+                            <div class="role">Retail Trader</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CTA BANNER
+    ============================================================ -->
+    <section style="padding-top:0;">
+        <div class="container">
+            <div class="card-elevated" style="text-align:center;">
+                <h2 class="heading-h2" style="color:#fff;">Ready to Trade Glitch Free?</h2>
+                <p style="font-size:16px;color:rgba(255,255,255,0.85);max-width:560px;margin:var(--space-md) auto;">
+                    Join thousands of traders who trust Wisdom Capital for their investment journey.
+                    Open your account in minutes.
+                </p>
+                <div style="display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap;margin-top:var(--space-md);">
+                    <a href="https://app-wisdomcapital-indialogin.edgeone.dev/" target="_blank" class="btn" style="background:#fff;color:var(--deep-link-blue);border-color:#fff;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
+                        Open Account Free
+                    </a>
+                    <a href="https://app-wisdomcapital-indialogin.edgeone.dev/" target="_blank" class="btn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,0.4);text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img
+                    src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnew_logo4.f8e1cee0.png&w=256&q=75"
+                    alt="Wisdom Capital"
+                    style="height:32px;width:auto;filter:brightness(0) invert(1);"
+                    />
+                    <p>
+                        Wisdom Capital (Ashlar Securities Pvt. Ltd.) — India's premier
+                        discount brokerage. Trade equities, F&amp;O, commodities, currencies,
+                        and IPOs with zero glitch.
+                    </p>
+                    <div style="margin-top:var(--space-md);">
+                        <img
+                        src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FSEBI.c95aedae.webp&w=1920&q=75"
+                        alt="SEBI registered"
+                        style="height:40px;width:auto;"
+                        />
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="https://wisdomcapital.in/contact-us" target="_blank">Contact</a></li>
+                        <li><a href="https://wisdomcapital.in/privacy-policy" target="_blank">Privacy Policy</a></li>
+                        <li><a href="https://wisdomcapital.in/terms-and-conditions" target="_blank">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">Web Trading</a></li>
+                        <li><a href="#">QuantPower</a></li>
+                        <li><a href="#">XTS Platform</a></li>
+                        <li><a href="#">API Trading</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="https://wisdomcapital.in/brokerage-plan" target="_blank">Pricing</a></li>
+                        <li><a href="#">Margin Calculator</a></li>
+                        <li><a href="#">e‑KYC</a></li>
+                        <li><a href="#">Relationship Manager</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Wisdom Capital. All rights reserved.</span>
+                <div class="footer-socials">
+                    <a href="https://x.com/wisdomcapital1" target="_blank" aria-label="X (Twitter)">
+                        <img src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftwitter.97f471d1.png&w=64&q=75" alt="X" />
+                    </a>
+                    <a href="https://facebook.com/wisdomtrading" target="_blank" aria-label="Facebook">
+                        <img src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffacebook.3b97eec4.png&w=64&q=75" alt="Facebook" />
+                    </a>
+                    <a href="https://linkedin.com/company/wisdom-capital-best-broker" target="_blank" aria-label="LinkedIn">
+                        <img src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flinkedin.ed870ae8.png&w=64&q=75" alt="LinkedIn" />
+                    </a>
+                    <a href="https://instagram.com/wisdomcapital" target="_blank" aria-label="Instagram">
+                        <img src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Finstagram.03ec45b7.png&w=64&q=75" alt="Instagram" />
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <img src="https://wisdomcapital.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fyoutube.1519dc81.png&w=64&q=75" alt="YouTube" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    HAMBURGER TOGGLE
+    ============================================================ -->
+    <script>
+        (function() {
+            const btn = document.getElementById('hamburgerBtn');
+            const nav = document.getElementById('navLinks');
+
+            if (btn && nav) {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const isOpen = nav.classList.toggle('is-open');
+                    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+
+                document.addEventListener('click', function(e) {
+                    if (!nav.contains(e.target) && !btn.contains(e.target)) {
+                        nav.classList.remove('is-open');
+                        btn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        nav.classList.remove('is-open');
+                        btn.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            }
+        })();
+    </script>
+
+</body>
+</html>
